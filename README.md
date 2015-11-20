@@ -27,3 +27,14 @@ Representation class - The class that is responsible for payload JSON structure.
 <br>
 Resources class - This class models the resources exposed in your RESTful API using Jersey which is a RESTful web framework.
 <br>
+
+How to run this application?
+
+<li>Step 1 - Go to Maven and run package lifecycle on your root maven pom. This will generate the necessary jar.</li>
+<li>Step 2 - Assume your config file is 'config folder'. Go to directory where root pom file is saved and run the following command -
+<br>
+java -jar dropwizard-project-application/target/dropwizard-project-application-1.0-SNAPSHOT.jar server config/config.yml
+</li>
+
+<br>
+This should start your Jetty server and you can now issue GET REST requests by going to the browser or run wget from command line.
